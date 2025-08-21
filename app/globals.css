@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-plus-jakarta: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-dm-serif: 'DM Serif Display', serif;
+}
+
+/* Background setup */
+body {
+  @apply text-text-primary font-sans antialiased subpixel-antialiased;
+  background: url("/download (3).jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.gradient-ring {
+  background: radial-gradient(600px circle at 0% 0%, rgba(249,210,157,0.08), transparent 40%),
+              radial-gradient(600px circle at 100% 0%, rgba(249,210,157,0.08), transparent 40%),
+              radial-gradient(800px circle at 50% 100%, rgba(249,210,157,0.06), transparent 45%);
+}
+
+.card {
+  @apply rounded-2xl border border-border-light bg-surface-light/40 backdrop-blur-sm shadow-soft;
+}
+
+.badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full border border-border-light bg-surface-dark/40 text-text-secondary text-xs font-medium;
+}
+
+h1.title {
+  @apply font-display text-4xl md:text-6xl tracking-tight text-text-primary;
+}
+
+h2.section {
+  @apply font-display text-2xl md:text-3xl mb-4 text-accent-gold font-medium;
+}
+
+a.link {
+  @apply underline decoration-accent-amber/40 underline-offset-4 hover:text-accent-amber transition-colors duration-200;
+}
+
+/* Elegant text styles */
+.elegant-text {
+  @apply font-elegant text-text-primary;
+}
+
+.modern-text {
+  @apply font-modern text-text-secondary;
+}
+
+.accent-text {
+  @apply font-display text-accent-gold;
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-all duration-200;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-surface-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-border-light rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-border;
+}

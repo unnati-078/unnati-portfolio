@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+.vercel/
+.env*
+npm-debug.log*
+yarn-error.log*
+.pnp.*
+.DS_Store
+Thumbs.db
+**/dist/
+**/build/
+package-lock.json

@@ -1,0 +1,33 @@
+/* Make it look like GitHub's native dark theme */
+
+.calendar {
+  background: transparent !important;
+  border: none !important;
+}
+
+.calendar-graph {
+  background: transparent !important;
+  border: none !important;
+}
+
+.calendar .day {
+  shape-rendering: geometricPrecision;
+  width: 10px !important;
+  height: 10px !important;
+  rx: 2;
+  ry: 2;
+}
+
+.calendar text {
+  fill: #9ca3af !important; /* gray-400 */
+  font-size: 10px;
+}
+
+.contrib-legend text {
+  fill: #9ca3af !important;
+  font-size: 10px;
+}
+
+.contrib-footer {
+  display: none !important; /* hide "Learn how we count contributions" */
+}
