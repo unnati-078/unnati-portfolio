@@ -32,9 +32,16 @@ export default function Home() {
               <a className="link" href="#projects">See projects</a>
             </div>
           </div>
-          <div className="justify-self-center">
-            <Image src="/avatar.svg" width={200} height={200} alt="avatar" className="rounded-full border border-neutral-800 p-2" />
-          </div>
+                     <div className="justify-self-center">
+             <Image 
+               src="/avatar.png" 
+               width={200} 
+               height={200} 
+               alt="Unnati Girase - Portfolio Avatar" 
+               className="w-32 h-32 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-[9999px] object-cover object-center shadow-glow hover:shadow-elegant transition-all duration-300 hover:scale-105" 
+               priority
+             />
+           </div>
         </div>
       </section>
 
