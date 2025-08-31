@@ -94,9 +94,9 @@ export default function Home() {
 
       <Section id="contact" title="Contact">
         <div className="card p-5">
-          <p>Email: <a className="link" href="mailto:hi@unnati.build">hi@unnati.build</a></p>
-          <p>GitHub: <a className="link" href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
-          <p>LinkedIn: <a className="link" href="https://www.linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></p>
+          <p>Email: <a className="link" href="mailto:unnatigirase03@gmail.com">unnatigirase03@gmail.com</a></p>
+          <p>GitHub: <a className="link" href="https://github.com/unnati-078" target="_blank">github.com/unnati-078</a></p>
+          <p>LinkedIn: <a className="link" href="https://in.linkedin.com/in/unnati-girase-2a3abb280" target="_blank">linkedin.com/in/unnati-girase-2a3abb280</a></p>
         </div>
       </Section>
 
