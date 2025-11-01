@@ -10,23 +10,31 @@
 
 /* Background setup */
 body {
-  @apply text-text-primary font-sans antialiased subpixel-antialiased;
-  background: url("/download (3).jpg") no-repeat center center fixed;
+  @apply text-text-primary font-sans antialiased;
+  background: 
+    radial-gradient(800px circle at 100% 0%, rgba(96, 165, 250, 0.15), transparent 40%),
+    radial-gradient(600px circle at 0% 100%, rgba(59, 130, 246, 0.1), transparent 40%),
+    url("/Fluid-Gradient.jpg") no-repeat center center fixed;
   background-size: cover;
+  min-height: 100vh;
 }
 
-.gradient-ring {
-  background: radial-gradient(600px circle at 0% 0%, rgba(249,210,157,0.08), transparent 40%),
-              radial-gradient(600px circle at 100% 0%, rgba(249,210,157,0.08), transparent 40%),
-              radial-gradient(800px circle at 50% 100%, rgba(249,210,157,0.06), transparent 45%);
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
 }
 
 .card {
-  @apply rounded-2xl border border-border-light bg-surface-light/40 backdrop-blur-sm shadow-soft;
+  @apply rounded-2xl border border-border-light/20 bg-surface-light/30 backdrop-blur-md shadow-soft 
+         hover:shadow-elegant hover:border-border-light/30 transition-all duration-300;
 }
 
 .badge {
-  @apply inline-flex items-center px-3 py-1 rounded-full border border-border-light bg-surface-dark/40 text-text-secondary text-xs font-medium;
+  @apply inline-flex items-center px-3 py-1.5 rounded-full 
+         border border-accent-blue/20 bg-surface-dark/40 
+         text-accent-light text-xs font-medium tracking-wide
+         hover:border-accent-blue/40 transition-all duration-300;
 }
 
 h1.title {
@@ -34,11 +42,11 @@ h1.title {
 }
 
 h2.section {
-  @apply font-display text-2xl md:text-3xl mb-4 text-accent-gold font-medium;
+  @apply font-display text-2xl md:text-3xl mb-4 text-accent-blue font-medium;
 }
 
 a.link {
-  @apply underline decoration-accent-amber/40 underline-offset-4 hover:text-accent-amber transition-colors duration-200;
+  @apply underline decoration-accent-blue/40 underline-offset-4 hover:text-accent-light transition-colors duration-200;
 }
 
 /* Elegant text styles */
@@ -51,7 +59,7 @@ a.link {
 }
 
 .accent-text {
-  @apply font-display text-accent-gold;
+  @apply font-display text-accent-blue;
 }
 
 /* Smooth transitions */

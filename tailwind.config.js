@@ -18,23 +18,24 @@ module.exports = {
           light: '#1a1a1a'
         },
         accent: {
-          DEFAULT: '#ddb892',
-          gold: '#ddb892',
-          amber: '#ddb892'
+          DEFAULT: '#60A5FA',
+          blue: '#60A5FA',
+          light: '#93C5FD',
+          dark: '#3B82F6'
         },
         text: {
-          primary: '#f8f8f2',
-          secondary: '#e5e7eb',
-          muted: '#9ca3af'
+          primary: '#F3F4F6',
+          secondary: '#E5E7EB',
+          muted: '#9CA3AF'
         },
         surface: {
-          DEFAULT: '#1f1f1f',
-          light: '#2a2a2a',
-          dark: '#0f0f0f'
+          DEFAULT: '#111827',
+          light: '#1F2937',
+          dark: '#030712'
         },
         border: {
-          DEFAULT: '#374151',
-          light: '#4b5563'
+          DEFAULT: '#1F2937',
+          light: '#374151'
         }
       },
       boxShadow: {
