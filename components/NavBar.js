@@ -28,8 +28,8 @@ export default function NavBar() {
 
   return (
     <header className="sticky top-0 z-50">
-      <div className="mx-auto max-w-6xl px-4 md:px-8 pt-3">
-        <div className="relative h-12 md:h-14 flex items-center justify-between bg-black/60 backdrop-blur-md border border-border-light rounded-2xl shadow-elegant px-4 md:px-6">
+      <div className="w-full pt-0">
+        <div className="relative h-12 md:h-14 flex items-center justify-between bg-black/60 backdrop-blur-md border border-border-light rounded-2xl shadow-elegant mx-auto max-w-6xl px-4 md:px-8">
           <Link href="/" className="font-display text-lg">unnati.build</Link>
 
           {/* Desktop nav */}
