@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         
 
         {/* Main content window - semi-transparent */}
-        <div className="relative z-10 w-full max-w-4xl bg-black/60 backdrop-blur-md rounded-2xl shadow-elegant p-4 md:p-8 border border-border-light">
+        <div className="relative z-10 w-full max-w-6xl bg-black/60 backdrop-blur-md rounded-2xl shadow-elegant p-4 md:p-8 border border-border-light">
           {children}
         </div>
       </body>
