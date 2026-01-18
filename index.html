@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-logo">Logo</div>
+        <div class="nav-links">
+            <div class="nav-item" onclick="showView('home')">Home</div>
+            <div class="nav-item" onclick="showView('projects')">Projects</div>
+            <div class="nav-item" onclick="showView('blogs')">Blogs</div>
+        </div>
+    </nav>
+
+    <!-- HOME VIEW -->
+    <div id="home-view">
+        <div class="container">
+            <!-- Hero -->
+            <section style="margin-top: 32px; border:none; padding: 64px 0;">
+                <div class="hero-content">
+                    <!-- Heading -->
+                    <div class="rect-dark h-lg w-75">Unnati Portfolio</div>
+                    <!-- Subheading -->
+                    <div class="rect-medium h-md w-50" style="display: flex; align-items: center; padding-left: 10px;">
+                        Full Stack Developer</div>
+
+                    <!-- Experience Pills -->
+                    <div class="pill-row" style="margin: 16px 0;">
+                        <div class="pill">React</div>
+                        <div class="pill">Node.js</div>
+                        <div class="pill">Design</div>
+                        <div class="pill">UI/UX</div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex">
+                        <div class="rect-dark"
+                            style="width: 140px; height: 48px; display: flex; align-items: center; justify-content: center; color: white;">
+                            View Work</div>
+                        <div class="rect-light"
+                            style="width: 140px; height: 48px; border: 2px solid var(--placeholder-dark); background: transparent; display: flex; align-items: center; justify-content: center;">
+                            Contact Me</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Snapshot -->
+            <section>
+                <div class="container">
+                    <div class="rect-light w-full" style="height: 120px; padding: 20px;">
+                        Brief introduction about myself, my background, and my passion for coding and design.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Projects -->
+            <section>
+                <div class="container">
+                    <!-- Section Title -->
+                    <div class="rect-dark h-lg"
+                        style="width: 300px; margin-bottom: 32px; display: flex; align-items: center; padding-left: 10px;">
+                        Featured Projects</div>
+
+                    <div class="grid grid-3">
+                        <!-- Card 1 -->
+                        <div class="card">
+                            <div class="card-title">E-Commerce Platform</div>
+                            <div class="card-desc">A full-stack shopping platform with cart and payment features.</div>
+                            <div class="tag-row">
+                                <div class="tag">React</div>
+                                <div class="tag">Node</div>
+                                <div class="tag">Stripe</div>
+                            </div>
+                            <div class="card-actions">
+                                <div class="rect-medium"
+                                    style="width: 80px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                                    Demo</div>
+                                <div class="rect-medium"
+                                    style="width: 80px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                                    Code</div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="card">
+                            <div class="card-title">Task Manager App</div>
+                            <div class="card-desc">Productivity tool for managing daily tasks and team collaboration.
+                            </div>
+                            <div class="tag-row">
+                                <div class="tag">Vue</div>
+                                <div class="tag">Firebase</div>
+                            </div>
+                            <div class="card-actions">
+                                <div class="rect-medium"
+                                    style="width: 80px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                                    Demo</div>
+                                <div class="rect-medium"
+                                    style="width: 80px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                                    Code</div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="card">
+                            <div class="card-title">Portfolio Website</div>
+                            <div class="card-desc">Modern portfolio website with animations and dark mode support.</div>
+                            <div class="tag-row">
+                                <div class="tag">HTML</div>
+                                <div class="tag">CSS</div>
+                                <div class="tag">JS</div>
+                                <div class="tag">GSAP</div>
+                            </div>
+                            <div class="card-actions">
+                                <div class="rect-medium"
+                                    style="width: 80px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                                    Demo</div>
+                                <div class="rect-medium"
+                                    style="width: 80px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                                    Code</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section>
+                <div class="container">
+                    <!-- Section Title -->
+                    <div class="rect-dark h-lg"
+                        style="width: 200px; margin-bottom: 32px; display: flex; align-items: center; padding-left: 10px;">
+                        Skills</div>
+
+                    <div class="grid grid-4">
+                        <div class="skill-col">
+                            <div class="rect-medium w-full h-md"
+                                style="display: flex; align-items: center; padding-left: 10px;">Frontend</div>
+                            <div class="rect-light w-full h-sm"
+                                style="display: flex; align-items: center; padding-left: 10px;">React</div>
+                            <div class="rect-light w-full h-sm"
+                                style="display: flex; align-items: center; padding-left: 10px;">Angular</div>
+                            <div class="rect-light w-full h-sm"
+                                style="display: flex; align-items: center; padding-left: 10px;">Vue.js</div>
+                        </div>
+                        <div class="skill-col">
+                            <div class="rect-medium w-full h-md"
+                                style="display: flex; align-items: center; padding-left: 10px;">Backend</div>
+                            <div class="rect-light w-full h-sm"
+                                style="display: flex; align-items: center; padding-left: 10px;">Node.js</div>
+                            <div class="rect-light w-full h-sm"
+                                style="display: flex; align-items: center; padding-left: 10px;">Python</div>
+                            <div class="rect-light w-full h-sm"
+                                style="display: flex; align-items: center; padding-left: 10px;">Go</div>
+                        </div>
+                        <div class="skill-col">
+                            <div class="rect-medium w-full h-md"
+                                style="display: flex; align-items: center; padding-left: 10px;">Database</div>
+                            <div class="rect-light w-full h-sm"
+                                style="display: flex; align-items: center; padding-left: 10px;">MongoDB</div>
+                            <div class="rect-light w-full h-sm"
+                                style="display: flex; align-items: center; padding-left: 10px;">PostgreSQL</div>
+                            <div class="rect-light w-full h-sm"
+                                style="display: flex; align-items: center; padding-left: 10px;">Redis</div>
+                        </div>
+                        <div class="skill-col">
+                            <div class="rect-medium w-full h-md"
+                                style="display: flex; align-items: center; padding-left: 10px;">Tools</div>
+                            <div class="rect-light w-full h-sm"
+                                style="display: flex; align-items: center; padding-left: 10px;">Git</div>
+                            <div class="rect-light w-full h-sm"
+                                style="display: flex; align-items: center; padding-left: 10px;">Docker</div>
+                            <div class="rect-light w-full h-sm"
+                                style="display: flex; align-items: center; padding-left: 10px;">AWS</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact CTA -->
+            <section>
+                <div class="container flex-center" style="flex-direction: column; gap: 24px;">
+                    <div class="rect-dark w-75 h-lg"
+                        style="display: flex; align-items: center; justify-content: center; color: white;">Ready to
+                        start a project?</div>
+                    <div class="flex">
+                        <div class="rect-medium"
+                            style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                            GH</div>
+                        <div class="rect-medium"
+                            style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                            LI</div>
+                        <div class="rect-medium"
+                            style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                            TW</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div> <!-- End Home View -->
+
+    <!-- PROJECTS VIEW -->
+    <div id="projects-view" class="hidden">
+        <div class="container" style="padding-top: 32px;">
+            <!-- Header -->
+            <div class="rect-dark h-lg"
+                style="width: 300px; margin-bottom: 32px; display: flex; align-items: center; padding-left: 10px;">All
+                Projects</div>
+
+            <!-- Filters -->
+            <div class="flex" style="margin-bottom: 48px;">
+                <div class="rect-medium h-md"
+                    style="width: 100px; display: flex; align-items: center; justify-content: center;">All</div>
+                <div class="rect-light h-md"
+                    style="width: 100px; display: flex; align-items: center; justify-content: center;">Web</div>
+                <div class="rect-light h-md"
+                    style="width: 100px; display: flex; align-items: center; justify-content: center;">App</div>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-3">
+                <!-- 6 Cards for projects page -->
+                <div class="card">
+                    <div class="card-title">Project 1</div>
+                    <div class="card-desc">Description of project 1</div>
+                    <div class="tag-row">
+                        <div class="tag">Stack</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Project 2</div>
+                    <div class="card-desc">Description of project 2</div>
+                    <div class="tag-row">
+                        <div class="tag">Stack</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Project 3</div>
+                    <div class="card-desc">Description of project 3</div>
+                    <div class="tag-row">
+                        <div class="tag">Stack</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Project 4</div>
+                    <div class="card-desc">Description of project 4</div>
+                    <div class="tag-row">
+                        <div class="tag">Stack</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Project 5</div>
+                    <div class="card-desc">Description of project 5</div>
+                    <div class="tag-row">
+                        <div class="tag">Stack</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Project 6</div>
+                    <div class="card-desc">Description of project 6</div>
+                    <div class="tag-row">
+                        <div class="tag">Stack</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOGS VIEW -->
+    <div id="blogs-view" class="hidden">
+        <div class="container" style="padding-top: 32px;">
+            <!-- Header -->
+            <div class="rect-dark h-lg"
+                style="width: 250px; margin-bottom: 48px; display: flex; align-items: center; padding-left: 10px;">
+                Latest Blogs</div>
+
+            <div class="grid grid-2">
+                <!-- Blog Card -->
+                <div class="card" onclick="showView('blog-post')" style="cursor: pointer;">
+                    <div class="rect-dark h-md w-75" style="display: flex; align-items: center; padding-left: 10px;">
+                        Understanding React Hooks</div>
+                    <div class="rect-light h-sm w-full" style="margin-top: 16px; padding: 5px;">A deep dive into
+                        useState and useEffect hooks.</div>
+                    <div class="rect-light h-sm w-full" style="padding: 5px;">Learn how to manage state effectively.
+                    </div>
+                    <div class="rect-xlight h-sm w-25"
+                        style="margin-top: 16px; display: flex; align-items: center; padding-left: 5px;">Oct 12, 2023
+                    </div>
+                </div>
+                <!-- Blog Card -->
+                <div class="card" onclick="showView('blog-post')" style="cursor: pointer;">
+                    <div class="rect-dark h-md w-75" style="display: flex; align-items: center; padding-left: 10px;">CSS
+                        Grid Masterclass</div>
+                    <div class="rect-light h-sm w-full" style="margin-top: 16px; padding: 5px;">Building complex layouts
+                        with ease.</div>
+                    <div class="rect-light h-sm w-full" style="padding: 5px;">Grid vs Flexbox: When to use what.</div>
+                    <div class="rect-xlight h-sm w-25"
+                        style="margin-top: 16px; display: flex; align-items: center; padding-left: 5px;">Nov 05, 2023
+                    </div>
+                </div>
+                <!-- Blog Card -->
+                <div class="card" onclick="showView('blog-post')" style="cursor: pointer;">
+                    <div class="rect-dark h-md w-75" style="display: flex; align-items: center; padding-left: 10px;">
+                        TypeScript Best Practices</div>
+                    <div class="rect-light h-sm w-full" style="margin-top: 16px; padding: 5px;">Writing cleaner and
+                        safer code.</div>
+                    <div class="rect-light h-sm w-full" style="padding: 5px;">Advanced types and utility types.</div>
+                    <div class="rect-xlight h-sm w-25"
+                        style="margin-top: 16px; display: flex; align-items: center; padding-left: 5px;">Dec 01, 2023
+                    </div>
+                </div>
+                <!-- Blog Card -->
+                <div class="card" onclick="showView('blog-post')" style="cursor: pointer;">
+                    <div class="rect-dark h-md w-75" style="display: flex; align-items: center; padding-left: 10px;">
+                        Future of Web Dev</div>
+                    <div class="rect-light h-sm w-full" style="margin-top: 16px; padding: 5px;">Trends to watch in 2024.
+                    </div>
+                    <div class="rect-light h-sm w-full" style="padding: 5px;">AI, WebAssembly and more.</div>
+                    <div class="rect-xlight h-sm w-25"
+                        style="margin-top: 16px; display: flex; align-items: center; padding-left: 5px;">Jan 15, 2024
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOG POST VIEW -->
+    <div id="blog-post-view" class="hidden">
+        <div class="container" style="max-width: 800px; padding-top: 48px;">
+            <div class="post-header">Understanding React Hooks</div>
+            <div class="post-meta">Oct 12, 2023 | 5 min read</div>
+
+            <div class="content-block h-xl" style="padding: 20px;">
+                <p>Introduction to the article...</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+            <div class="content-block" style="height: 150px; padding: 20px;">
+                <h3>Subheading</h3>
+                <p>More detailed content about the topic going here.</p>
+            </div>
+            <div class="content-block" style="height: 150px; padding: 20px;">
+                <p>Code examples and conclusion.</p>
+            </div>
+
+            <div class="flex" style="margin-top: 64px; border-top: 1px solid var(--border-color); padding-top: 32px;">
+                <div class="rect-medium"
+                    style="width: 120px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                    Share</div>
+                <div class="rect-medium"
+                    style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">T
+                </div>
+                <div class="rect-medium"
+                    style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">L
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer (Persistent) -->
+    <footer>
+        <div class="flex">
+            <div class="rect-dark" style="width: 20px; height: 20px;">©</div>
+            <div class="rect-dark" style="width: 50px; height: 20px; width: auto !important; padding: 0 5px;">2024</div>
+            <div class="rect-dark" style="width: 20px; height: 20px; width: auto !important; padding: 0 5px;">Portfolio
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
